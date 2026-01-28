@@ -9,6 +9,7 @@ for x in fruits:
         continue
     print(i)
     
+    
     for i in range(1, 13):
     if i == 9 or i == 10:
         continue
