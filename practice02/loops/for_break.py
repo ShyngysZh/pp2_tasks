@@ -23,6 +23,7 @@ for i in range(1, 11):
     print(i)
     
     numbers = [3, 5, 7, 0, 9, 11]
+    
 for n in numbers:
     if n == 0:
         break
