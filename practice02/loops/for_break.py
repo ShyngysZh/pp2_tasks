@@ -16,3 +16,15 @@ for x in range(6):
   print(x)
 else:
   print("Finally finished!")
+
+for i in range(1, 11):
+    if i == 4:
+        break
+    print(i)
+    
+    numbers = [3, 5, 7, 0, 9, 11]
+for n in numbers:
+    if n == 0:
+        break
+    print(n)
+
