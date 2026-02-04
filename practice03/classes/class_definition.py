@@ -10,6 +10,7 @@ del p1
 
 
 
+
 p1 = MyClass()
 p2 = MyClass()
 p3 = MyClass()
