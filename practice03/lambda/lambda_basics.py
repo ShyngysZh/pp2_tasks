@@ -22,7 +22,10 @@ print(is_even(4))
 # same as
 def is_even(x):
     return x % 2 == 0
-  
+
+
+
+
   
   def myfunc(n):
   return lambda a : a * n
