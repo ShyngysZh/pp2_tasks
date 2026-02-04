@@ -51,7 +51,6 @@ sq = Square()
 print(sq.area())
 
 
-
 class Bird:
     def fly(self):
         print("Bird can fly")
@@ -64,3 +63,5 @@ birds = [Bird(), Penguin()]
 
 for b in birds:
     b.fly()
+
+
