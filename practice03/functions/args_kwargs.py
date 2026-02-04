@@ -14,7 +14,6 @@ def my_function(*args):
 my_function("Emil", "Tobias", "Linus")
 
 
-
 def my_function(greeting, *names):
   for name in names:
     print(greeting, name)
