@@ -7,4 +7,3 @@ a=int(input())
 print(*square(a))
 
 
-
