@@ -55,7 +55,7 @@ print(f"  str(42)       = '{str(42)}'")
 print(f"  str(3.14)     = '{str(3.14)}'")
 print(f"  str(True)     = '{str(True)}'")
 
-print(f"  bool(0)       = {bool(0)}")
+print(f"  bool(0)       = {bool(0)}") 
 print(f"  bool(1)       = {bool(1)}")
 print(f"  bool('')      = {bool('')}")
 print(f"  bool('hello') = {bool('hello')}")

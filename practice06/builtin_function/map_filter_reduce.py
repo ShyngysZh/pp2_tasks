@@ -44,4 +44,4 @@ print(f"Maximum with reduce(): {maximum}")
 words = ["Python", "is", "awesome"]
 sentence = reduce(lambda x, y: x + " " + y, words)
 print(f"\nWords:    {words}")
-print(f"Sentence: {sentence}")
+print(f"Sentence: {sentence}") 
