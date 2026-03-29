@@ -111,7 +111,7 @@ def saveToJson(data, outputFile='receiptData.json'):
     print(f"\nДанные сохранены в {outputFile}")
 
 try:
-    receiptData = parseReceipt('raw.txt')
+    receiptData = parseReceipt(r"raw.txt")
     printReceiptFormatted(receiptData)
     saveToJson(receiptData)
 
