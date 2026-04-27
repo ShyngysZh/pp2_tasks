@@ -1,0 +1,157 @@
+[
+  {
+    "username": "Carol",
+    "email": "carol@family.kz",
+    "birthday": "1972-03-22",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+77012223344",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "username": "Zarina_Nurlanovna",
+    "email": "zarina@yandex.kz",
+    "birthday": "2000-04-30",
+    "group": "Family",
+    "phones": []
+  },
+  {
+    "username": "Medina_Akhmetova",
+    "email": "medina@gmail.com",
+    "birthday": "2003-11-05",
+    "group": "Family",
+    "phones": []
+  },
+  {
+    "username": "Alinur",
+    "email": "zhasulanov.alinur@mail.ru",
+    "birthday": "2008-03-02",
+    "group": "Family",
+    "phones": []
+  },
+  {
+    "username": "Bober",
+    "email": "bober@work.kz",
+    "birthday": "1985-11-30",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77009998877",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "username": "Aizat_Bekova",
+    "email": "aizat@kbtu.kz",
+    "birthday": "2002-03-15",
+    "group": "Work",
+    "phones": []
+  },
+  {
+    "username": "Tony_Stark",
+    "email": "ironman@starkindustries.com",
+    "birthday": "1970-05-29",
+    "group": "Work",
+    "phones": []
+  },
+  {
+    "username": "Elon_Musk",
+    "email": "elon@spacex.com",
+    "birthday": "1971-06-28",
+    "group": "Work",
+    "phones": []
+  },
+  {
+    "username": "Alina",
+    "email": "alina@gmail.com",
+    "birthday": "1990-05-14",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77001112233",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "username": "Bilbo_Baggins",
+    "email": "bilbo@shire.me",
+    "birthday": "1990-09-22",
+    "group": "Friend",
+    "phones": []
+  },
+  {
+    "username": "Daniyar_Seitkali",
+    "email": "daniyar@mail.ru",
+    "birthday": "2001-07-22",
+    "group": "Friend",
+    "phones": []
+  },
+  {
+    "username": "Hermione_Granger",
+    "email": "hermione@hogwarts.edu",
+    "birthday": "1979-09-19",
+    "group": "Friend",
+    "phones": []
+  },
+  {
+    "username": "Sherlock_Holmes",
+    "email": "sherlock@baker.st",
+    "birthday": "1854-01-06",
+    "group": "Friend",
+    "phones": []
+  },
+  {
+    "username": "Naruto_Uzumaki",
+    "email": "naruto@konoha.jp",
+    "birthday": "1999-10-10",
+    "group": "Friend",
+    "phones": []
+  },
+  {
+    "username": "Keanu_Reeves",
+    "email": "keanu@matrix.com",
+    "birthday": "1964-09-02",
+    "group": "Friend",
+    "phones": []
+  },
+  {
+    "username": "Gordon_Ramsay",
+    "email": "gordon@hellskitchen.com",
+    "birthday": "1966-11-08",
+    "group": "Other",
+    "phones": []
+  },
+  {
+    "username": "SpongeBob_Square",
+    "email": "spongebob@bikini.bottom",
+    "birthday": "1986-07-14",
+    "group": "Other",
+    "phones": []
+  },
+  {
+    "username": "Darth_Vader",
+    "email": "vader@empire.com",
+    "birthday": "1977-05-25",
+    "group": "Other",
+    "phones": []
+  },
+  {
+    "username": "Walter_White",
+    "email": "heisenberg@gmail.com",
+    "birthday": "1958-09-07",
+    "group": "Other",
+    "phones": []
+  },
+  {
+    "username": "Karl",
+    "email": "karl.kent@mail.ru",
+    "birthday": "2000-08-12",
+    "group": "VIP",
+    "phones": []
+  }
+]

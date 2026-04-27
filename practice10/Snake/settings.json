@@ -1,0 +1,6 @@
+{
+  "snake_color": [0, 100, 0],
+  "frame_color": [0, 255, 204],
+  "grid_color": [200, 255, 255],
+  "sound": true
+}

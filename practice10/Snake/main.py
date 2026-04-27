@@ -3,6 +3,7 @@ import sys
 import random
 from color_palette import *
 from player import MusicPlayer
+import db
 
 pygame.init()
 
@@ -47,20 +48,26 @@ def reset_game():
         random.randint(0, COUNT_BLOCKS - 1),
         random.randint(0, COUNT_BLOCKS - 1)
     )
+    
+  
 
     d_row = 0
     d_col = 1
     game_over = False
     
-    
+    global bonus_food
+    bonus_food = None
 
 
     music.current = 0
     music.play_loop()
     game_over_sound_played = False
+    
+   
   
 snake_blocks = [SnakeBlock(9,8),SnakeBlock(9,9),SnakeBlock(9,10)]
 
+bonus_food = None
 food_timer = 0
 FOOD_LIFETIME = 10
 
@@ -92,6 +99,8 @@ game_over_sound_played = False
 music = MusicPlayer()
 music.play_loop()
 
+data = db.load_data()
+high_score = data.get("high_score", 0)
 
 while True:
   for event in pygame.event.get():
@@ -149,6 +158,9 @@ while True:
   rect6 = text6.get_rect(center=(100,50))
   screen.blit(text6, rect6)
   
+  text7 = font1.render(f"Best: {high_score}", True, (255,255,255))
+  screen.blit(text7, (200, 20))
+  
   for row in range(COUNT_BLOCKS):
     for column in range(COUNT_BLOCKS):
       if (row+column)%2==0:
@@ -159,6 +171,9 @@ while True:
       draw_block(color,row,column)
       
   draw_block(FOOD_COLOR, food.x, food.y)
+  
+  if bonus_food:
+    draw_block((255, 0, 255), bonus_food.x, bonus_food.y)  #  фиолетовая
   
     
       
@@ -196,9 +211,17 @@ while True:
           random.randint(0, COUNT_BLOCKS - 1)
       )
       num+=1
-      if num%10==0:
-        level+=1
+      if num % 10 == 0:
+        level += 1
         fps = min(BASE_FPS + level, MAX_FPS)
+
+        bonus_food = SnakeBlock(
+            random.randint(0, COUNT_BLOCKS - 1),
+            random.randint(0, COUNT_BLOCKS - 1)
+        )
+    elif bonus_food and new_head.x == bonus_food.x and new_head.y == bonus_food.y:
+      num += 2
+      bonus_food = None
       
     else:
       snake_blocks.pop(0)
@@ -210,7 +233,8 @@ while True:
     if not game_over_sound_played:
         music.game_over()
         game_over_sound_played = True
-    
+  
+        db.save_score(num)
     text1 = font.render("GAME OVER", True, (0, 0, 0))
     text2 = font.render("Press ENTER to restart", True, (0, 0, 0))
 
